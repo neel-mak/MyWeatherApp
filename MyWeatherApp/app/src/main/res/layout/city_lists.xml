@@ -16,7 +16,6 @@
             android:padding="10dp">
 
 
-
             <TextView
                 android:id="@+id/cityTime"
                 android:layout_width="300dp"
