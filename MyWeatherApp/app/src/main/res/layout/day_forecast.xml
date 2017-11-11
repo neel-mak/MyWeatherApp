@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/day_Date"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Date"/>
+
+            <TextView
+                android:id="@+id/day_Max"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Max"/>
+
+            <TextView
+                android:id="@+id/day_Min"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Min"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

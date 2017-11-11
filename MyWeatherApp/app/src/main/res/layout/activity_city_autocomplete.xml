@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/add_city_text"
+        android:id="@+id/autocomplete_tv"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="10dp"
@@ -18,7 +18,7 @@
         android:textColor="@color/colorPrimary"
         android:background="@drawable/style"
         android:maxLines="1"/>
-    
+
     <ImageView
         android:id="@+id/cleartext"
         android:layout_width="16dp"
@@ -27,10 +27,10 @@
         android:layout_marginRight="20dp"
         android:layout_alignParentRight="true"
         android:src="@drawable/ic_clear_black_18dp"/>
-    
+
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/reclView"
-        android:layout_below="@+id/add_city_text"
+        android:id="@+id/auto_recyclerView"
+        android:layout_below="@+id/autocomplete_tv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"

@@ -1,7 +1,7 @@
-package cmpe277.com.myweatherapp;
+package cmpe277.com.MyWeatherApp;
 
 /**
- * Created by NEEL on 01-11-2017.
+ * Created by NEEL on 04-11-2017.
  */
 
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -12,7 +12,6 @@ import com.google.android.gms.location.places.AutocompletePrediction;
 import com.google.android.gms.location.places.AutocompletePredictionBuffer;
 import com.google.android.gms.location.places.Places;
 import com.google.android.gms.maps.model.LatLngBounds;
-
 
 
 import android.content.Context;
@@ -31,15 +30,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Note that this adapter requires a valid {@link GoogleApiClient}.
- * The API client must be maintained in the encapsulating Activity, including all lifecycle and
- * connection states. The API client must be connected with the {@link Places#GEO_DATA_API} API.
- */
-public class RecyclerAdapter
-        extends RecyclerView.Adapter<RecyclerAdapter.PredictionHolder> implements Filterable {
 
-    private static final String TAG = "RecyclerAdapter";
+public class CityAutocompleteAdapter
+        extends RecyclerView.Adapter<CityAutocompleteAdapter.PredictionHolder> implements Filterable {
+
+    private static final String TAG = "PlacesAutoCompleteAdapter";
     private ArrayList<PlaceAutocomplete> mResultList;
     private GoogleApiClient mGoogleApiClient;
     private LatLngBounds mBounds;
@@ -48,7 +43,7 @@ public class RecyclerAdapter
     private Context mContext;
     private int layout;
 
-    public RecyclerAdapter(Context context, int resource, GoogleApiClient googleApiClient,
+    public CityAutocompleteAdapter(Context context, int resource, GoogleApiClient googleApiClient,
                                      LatLngBounds bounds, AutocompleteFilter filter) {
         mContext = context;
         layout = resource;
@@ -187,8 +182,8 @@ public class RecyclerAdapter
         public PredictionHolder(View itemView) {
 
             super(itemView);
-            mPrediction = (TextView) itemView.findViewById(R.id.SearchName);
-            mRow=(RelativeLayout)itemView.findViewById(R.id.row);
+            mPrediction = (TextView) itemView.findViewById(R.id.address);
+            mRow=(RelativeLayout)itemView.findViewById(R.id.autocomplete_row);
         }
 
     }
@@ -211,4 +206,6 @@ public class RecyclerAdapter
             return description.toString();
         }
     }
+
+
 }

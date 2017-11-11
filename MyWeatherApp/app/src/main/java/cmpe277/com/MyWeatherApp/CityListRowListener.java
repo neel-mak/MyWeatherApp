@@ -1,4 +1,8 @@
-package cmpe277.com.myweatherapp;
+package cmpe277.com.MyWeatherApp;
+
+/**
+ * Created by NEEL on 04-11-2017.
+ */
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,11 +10,8 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-/**
- * Created by NEEL on 01-11-2017.
- */
 
-public class Recycler_Listener implements RecyclerView.OnItemTouchListener {
+public class CityListRowListener implements RecyclerView.OnItemTouchListener {
     private OnItemClickListener mListener;
 
     public interface OnItemClickListener {
@@ -19,7 +20,7 @@ public class Recycler_Listener implements RecyclerView.OnItemTouchListener {
 
     GestureDetector mGestureDetector;
 
-    public Recycler_Listener(Context context, OnItemClickListener listener) {
+    public CityListRowListener(Context context, OnItemClickListener listener) {
         mListener = listener;
         mGestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
             @Override public boolean onSingleTapUp(MotionEvent e) {

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:onClick="CityView">
+
+
+        <TextView
+            android:id="@+id/cityCountry"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Country" />
+
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cityCountry"
+            android:text="CITY"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/cityTemp"
+            android:layout_width="80dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/cityCountry"
+            android:text="Temp"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+    </RelativeLayout>
+</LinearLayout>

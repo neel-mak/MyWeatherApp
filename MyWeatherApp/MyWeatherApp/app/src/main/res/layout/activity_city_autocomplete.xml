@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/autocomplete_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawableLeft="@drawable/ic_search_black_18dp"
+        android:drawablePadding="10dp"
+        android:hint="Enter city"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/style"
+        android:maxLines="1"/>
+
+    <ImageView
+        android:id="@+id/cleartext"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_clear_black_18dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/auto_recyclerView"
+        android:layout_below="@+id/autocomplete_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/row"
+    android:id="@+id/autocomplete_row"
     android:layout_width="match_parent"
     android:layout_height="65dp"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
     android:layout_centerVertical="true"
     android:background="@drawable/style">
-    
+
     <ImageView
-        android:id="@+id/img"
+        android:id="@+id/image"
         android:layout_width="22dp"
         android:layout_height="22dp"
         android:src="@drawable/ic_place_black_18dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"/>
-    
+
     <TextView
-        android:id="@+id/SearchName"
+        android:id="@+id/address"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:textSize="15sp"
-        android:layout_toRightOf="@+id/img"
+        android:layout_toRightOf="@+id/image"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"/>
